@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_animales.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Información de contacto</title>
+</head>
+<body>
+	<nav class="menu-slide">
+	<ul class="menu">
+	<li><a href="./index.html">Volver al inicio</a></li>
+	<li><a href="./animales_vertebrados.html">Animales Vertebrados</a></li>
+	<li><a href="./animales_invertebrados">Animales Invertebrados</a></li>
+	</ul>
+	</nav>
+
+    <h1>Registro de datos</h1>
+    <form action="" method="POST" enctype="multipart/form-data" class="cajaform">
+        
+        <label for="nombre"><strong>Nombre:</strong></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,20}" required> 
+        <br><br>
+        
+        <label for="apellido"><strong>Apellido:</strong></label>
+        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,20}" required> 
+        <br><br>
+        
+        <label for="cedula"><strong>Cédula:</strong></label>
+        <input type="text" id="cedula" name="cedula" placeholder="Ej: V-152483" pattern="[VE]-[0-9]{7,8}" required> 
+        <br><br>
+        
+        <label><strong>Género:</strong></label>            
+        <input type="radio" id="m" name="genero" value="masculino" required>
+        <label for="m">Masculino</label>
+        <input type="radio" id="f" name="genero" value="femenino">
+        <label for="f">Femenino</label>
+        <br><br>
+        
+        <label for="mencion"><strong>Mención:</strong></label>        
+        <select id="mencion" name="mencion" required>
+            <option value="">Seleccione su mención:</option>
+            <option value="Informática">Informática</option>
+            <option value="Electricidad">Electricidad</option>
+            <option value="Química">Química</option>
+        </select> 
+        <br><br>
+        
+        <label for="direccion"><strong>Dirección:</strong></label> <br>
+        <textarea id="direccion" name="direccion" rows="4" cols="30" required></textarea>
+        <br><br>
+        
+        <strong>Documentos entregados:</strong><br>
+        <input type="checkbox" id="c" name="documento[]" value="carta">
+        <label for="c">Carta Informativa</label>
+        <input type="checkbox" id="d" name="documento[]" value="documento">
+        <label for="d">Documentos</label>
+        <input type="checkbox" id="n" name="documento[]" value="notas">
+        <label for="n">Notas</label>
+        <br><br>
+        
+        <label for="adjuntar"><strong>Adjuntar cédula:</strong></label>
+        <input type="file" id="adjuntar" name="adjuntar_cedula" required>
+        <br><br>
+        
+        <button type="submit">Enviar Registro</button>
+        
+    </form>
+<footer>
+    <p class="footyCss">© 2026 - Página Educativa Sobre Animales Vertebrados</p>
+    </footer>
+</body>
+</html>
