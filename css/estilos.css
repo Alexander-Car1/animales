@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url('../fonts/CreatoDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-fondo: #EED9B3;
+    --color-caja: #FFFDF9;
+    --color-titulo: #5C3D2E;
+    --color-texto: #2D2424;
+}
+
+.menu-slide {
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 2px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.menu li {
+    display: inline-block;
+}
+
+nav ul.menu a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: block;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+nav ul.menu a:hover {
+    background: #ff9800;
+    color: white;
+    transform: translateY(-3px);
+}
+
+body {
+    font-family: 'CreatoDisplay', sans-serif;
+    line-height: 1.8;
+    background-color: var(--color-fondo);
+    color: #000000;
+}
+
+h1, h2, h3 {
+    color: var(--color-titulo);
+}
+
+.caja {
+    background-color: var(--color-caja);
+    color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cajaform {
+    background-color: #c9c3c3;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.encabezados {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.tarjeta p {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 15px;
+}
+
+.video-centrado {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-contenedor {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+}
+
+.video-contenedor video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footycss {
+    color: #000000;
+    background: white;
+    border-radius: 2px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px; 
+}
